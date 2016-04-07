@@ -1,5 +1,5 @@
 # Entity Resolver & Entity-Level Sentiment Analyzer (for Android)
-**Hackathon project to demonstrate using RosAPI in an Android application.**
+**Project to demonstrate using RosAPI in an Android application.**
 
 ##Installation
 
