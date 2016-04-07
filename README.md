@@ -1,5 +1,5 @@
-# Entity Resolver & Entity-Level Sentiment Analyzer (for Android)
-**Project to demonstrate using RosAPI in an Android application.**
+# android-entity-resolver
+An entity resolver and entity-level sentiment analyzer application for Android.
 
 ##Installation
 
