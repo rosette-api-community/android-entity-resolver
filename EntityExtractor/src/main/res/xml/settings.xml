@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="User Settings" >
+        <EditTextPreference
+            android:title="@string/pref_api_key"
+            android:summary="@string/pref_api_key_summary"
+            android:key="prefRosetteAPIKey"/>
+        <EditTextPreference
+            android:title="@string/pref_alt_url"
+            android:summary="@string/pref_alt_url_summary"
+            android:key="prefRosetteAltURL"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.basistech.EntityExtractionApp" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BIND_VOICE_INTERACTION"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".EntryActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExtractionActivity"
+                  android:label="Extraction"
+                  android:parentActivityName=".EntryActivity"/>
+        <activity android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".EntryActivity"/>
+        <service android:name=".ExtractionInteractionService"
+                 android:label="Interaction Service"
+                 android:permission="android.permission.BIND_VOICE_INTERACTION"
+                 android:process=":interactor">
+            <meta-data android:name="android.voice_interaction"
+                       android:resource="@xml/interaction_service" />
+            <intent-filter>
+                <action android:name="android.service.voice.VoiceInteractionService" />
+            </intent-filter>
+            <meta-data
+                    android:name="com.android.systemui.action_assist_icon"
+                    android:resource="@drawable/assistant" />
+        </service>
+        <service android:name=".ExtractionInteractionSessionService"
+                 android:permission="android.permission.BIND_VOICE_INTERACTION"
+                 android:process=":session">
+        </service>
+
+    </application>
+
+</manifest>

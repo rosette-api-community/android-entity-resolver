@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EntityExtractor</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_api_key">API Key</string>
+    <string name="pref_api_key_summary">Set Rosette API key here</string>
+    <string name="pref_alt_url">Alternate URL</string>
+    <string name="pref_alt_url_summary">Set Rosette alternate URL here</string>
+</resources>

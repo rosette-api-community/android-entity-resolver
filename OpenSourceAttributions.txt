@@ -1,0 +1,10 @@
+Several files contain code from the Android Open Source Project, from the below link:
+
+https://android.googlesource.com/platform/frameworks/base/+/android-6.0.1_r13/tests/Assist/
+
+src/main/res/drawable/navbar_scrim.xml
+src/main/res/drawable/assistant.xml
+src/main/res/drawable/round_rect.xml
+src/main/java/com/basistech/EntityExtractionApp/ExtractionRecognitionService.java
+src/main/java/com/basistech/EntityExtractionApp/ExtractionInteractionSession.java
+src/main/AndroidManifest.xml
